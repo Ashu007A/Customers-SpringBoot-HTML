@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2>Customer List</h2>
+    <div class="search-bar">
+        <select id="search-by">
+            <option value="firstName">First Name</option>
+            <option value="city">City</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <!-- Add more options as needed -->
+        </select>
+        <input type="text" id="search-input" placeholder="Search...">
+        <button onclick="search()">Search</button>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Street</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <!-- Add more table headers as needed -->
+        </tr>
+        </thead>
+        <tbody id="customer-table-body">
+        <!-- Customer data will be populated dynamically here -->
+        </tbody>
+    </table>
+    <button onclick="redirectToAddCustomer()">Add Customer</button>
+    <button onclick="syncData()">Sync</button>
+</div>
+
+<script>
+    function redirectToAddCustomer() {
+        window.location.href = "/add-customer";
+    }
+
+    function syncData() {
+        // Implement sync functionality
+    }
+
+    function search() {
+        // Implement search functionality based on selected criteria and input text
+    }
+</script>
+</body>
+</html>
